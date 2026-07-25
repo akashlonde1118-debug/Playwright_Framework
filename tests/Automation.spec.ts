@@ -66,7 +66,7 @@ test('Open Automation Practice website' , async({ page }) =>
 
     await page.mouse.wheel(0,500);
 
-   await page.locator('input#txtDate').click();
+  // await page.locator('input#txtDate').click();
 
     // while (true) {
 
@@ -77,7 +77,7 @@ test('Open Automation Practice website' , async({ page }) =>
     //         break;
     //     }
 
-        await page.locator('.ui-datepicker-next').click();
+       // await page.locator('.ui-datepicker-next').click();
    // }
 
    // Click today's date
@@ -94,6 +94,8 @@ test('Open Automation Practice website' , async({ page }) =>
     await page.locator('input#multipleFilesInput').setInputFiles(['C:/Users/HP/Downloads/Sample/Sample_File1.pdf','C:/Users/HP/Downloads/Sample/Sample_File2.doc']);
 
     await page.locator("//button[text()='Upload Multiple Files']").click();
+
+    await page.waitForTimeout(3000);
 
 
 
