@@ -81,7 +81,7 @@ test('Open Automation Practice website' , async({ page }) =>
    // }
 
    // Click today's date
-    await page.locator(`//a[text()='${day}']`).click();
+    //await page.locator(`//a[text()='${day}']`).click();
 
     await page.waitForTimeout(3000);
 
@@ -97,6 +97,11 @@ test('Open Automation Practice website' , async({ page }) =>
 
     await page.waitForTimeout(3000);
 
+   // await page.locator("#shadow-host input[type='text']").first().fill('Akash Londe');
+
+  await page.locator('#shadow_host > input').first().click();
+  await page.locator('#shadow_host > input').first().fill('Akash');
+  await page.locator('input:nth-child(7)').check();
 
 
 
