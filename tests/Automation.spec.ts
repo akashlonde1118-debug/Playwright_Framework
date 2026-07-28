@@ -103,7 +103,7 @@ test('Open Automation Practice website' , async({ page }) =>
   await page.locator('#shadow_host > input').first().fill('Akash');
   await page.locator('input:nth-child(7)').check();
 
-  await
+  await page.waitForTimeout(3000);
 
 
 
