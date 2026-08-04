@@ -61,7 +61,7 @@ test('Open Automation Practice website' , async({ page }) =>
     }
 
     // Click today's date
-    await page.locator(`//a[text()='${day}']`).click();
+    //await page.locator(`//a[text()='${day}']`).click();
 
 
     await page.mouse.wheel(0,500);
@@ -81,7 +81,7 @@ test('Open Automation Practice website' , async({ page }) =>
    // }
 
    // Click today's date
-    //await page.locator(`//a[text()='${day}']`).click();
+   // await page.locator(`//a[text()='${day}']`).click();
 
     await page.waitForTimeout(3000);
 
@@ -91,7 +91,7 @@ test('Open Automation Practice website' , async({ page }) =>
 
     await page.waitForTimeout(3000);
 
-    await page.locator('input#multipleFilesInput').setInputFiles(['C:/Users/HP/Downloads/Sample/Sample_File1.pdf','C:/Users/HP/Downloads/Sample/Sample_File2.doc']);
+  await page.locator('input#multipleFilesInput').setInputFiles(['C:/Users/HP/Downloads/Sample/Sample_File1.pdf','C:/Users/HP/Downloads/Sample/Sample_File2.doc']);
 
     await page.locator("//button[text()='Upload Multiple Files']").click();
 
@@ -104,7 +104,9 @@ test('Open Automation Practice website' , async({ page }) =>
   await page.locator('input:nth-child(7)').check();
 
   await page.waitForTimeout(3000);
-await
+   
+
+
 
 
 
@@ -119,4 +121,4 @@ await
 }
 
 
-)
+);
