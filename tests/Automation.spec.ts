@@ -104,20 +104,7 @@ test('Open Automation Practice website' , async({ page }) =>
   await page.locator('input:nth-child(7)').check();
 
   await page.waitForTimeout(3000);
-  await
 
 
 
-
-
-
-
-
-
-
-
-
-}
-
-
-);
+});
